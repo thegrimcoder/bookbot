@@ -13,3 +13,6 @@ def get_num_characters(str):
             char_count[char] = 1
 
     return char_count
+
+def sort_Dictionary(dict):
+    return 10
