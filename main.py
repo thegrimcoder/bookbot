@@ -15,9 +15,9 @@ def main():
     print("----------- Word Count ----------")
     print(f"Found {total_words} total words")
     print("--------- Character Count -------")
-    for key, value in sorted_list:
-        if key.isalpha():
-            print(f{key} : {value})
+    for dict in sorted_list:
+        if dict['char'].isalpha():
+            print(f"{dict['char']}: {dict['num']}")
     print("============= END ===============")
     
 main()                
