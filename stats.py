@@ -14,5 +14,15 @@ def get_num_characters(str):
 
     return char_count
 
-def sort_Dictionary(dict):
-    return 10
+def sort_dictionary(dict):
+    sorted_list = []
+    keys = dict.keys()
+
+    for key in keys:
+        temp_dict = {}
+        temp_dict[char] = key
+        temp_dict[num] = dict[key]
+        sorted_list.append(temp_dict)
+
+    sorted_list.sort(key="num")
+    return sorted_list
