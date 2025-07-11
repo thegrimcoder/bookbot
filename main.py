@@ -10,9 +10,9 @@ def get_book_text(filepath):
 def main():
     argv_length = len(sys.argv)
     #print(argv_length)
-    
+
     if argv_length != 2:
-        print("Usage: python3 main/py <path_to_book>")
+        print("Usage: python3 main.py <path_to_book>")
         sys.exit(1)
 
     total_words = get_num_words(get_book_text(sys.argv[1]))
